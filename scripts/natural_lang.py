@@ -1,7 +1,5 @@
-import tweepy
 import sys
 import pymongo
-import json
 sys.path.append("../")
 from import_config import load_config
 from pymongo import MongoClient
@@ -17,13 +15,13 @@ db = client[config['database']["database_name"]]
 conn = db[config["database"]["collection_name"]]
 
 data = conn.find()
-print(data)	
+
 
 for twitter_object in data:
 	twitter_object["process_text"] = nltk.word_tokenize(twitter_object['text'])
 	twitter_object["natural_lang"] = nltk.pos_tag(twitter_object["process_text"])
 	conn.save(twitter_object)
-	print(twitter_object)
+	
 
 
 

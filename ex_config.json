@@ -1,0 +1,22 @@
+{
+	"database": {
+		"user_name": "admin",
+		"password": "password",
+		"connection_url": "blahblah.com",
+		"database_name": "basic_api",
+		"collection_name": "tasks"
+	},
+	"test_database": {
+		"user_name": "admin",
+		"password": "password",
+		"connection_url": "blahblah.com",
+		"database_name": "basic_api",
+		"collection_name": "tasks"
+	},
+	"twitter": {
+		"consumer_key": "numbers_and_stuff",
+		"consumer_secret": "numbers_and_stuff",
+		"access_key": "numbers",
+		"access_secret": "numbers_and_stuff"
+	}
+}
